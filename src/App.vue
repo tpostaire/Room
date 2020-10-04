@@ -17,6 +17,7 @@ import { Namespaces } from '@/store'
 import { Watch } from 'vue-property-decorator'
 import { verify } from 'jsonwebtoken'
 import Axios from 'axios'
+import { getWotApiData } from '@/games/wot/api'
 
 const AppAuthentication = namespace(Namespaces.APP_AUTHENTICATION)
 const AppRoom = namespace(Namespaces.APP_ROOM)
@@ -52,6 +53,9 @@ export default class TheApp extends Vue {
       switch (this.game) {
         case Game.WOWS:
           await getWowsApiData((this.localToken || this.jwt.encoded), this.addApi)
+          break
+        case Game.WOT:
+          await getWotApiData((this.localToken) || this.jwt.encoded, this.addApi)
           break
         default: break
       }

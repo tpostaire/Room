@@ -53,7 +53,7 @@ export const GameApiRoutes: GameApiRoutes = {
     entities: 'wows.encyclopedia.ships'
   },
   wot: {
-    maps: '',
-    entities: ''
+    maps: 'wot.encyclopedia.maps',
+    entities: 'wot.encyclopedia.tanks'
   }
 }
