@@ -30,6 +30,7 @@ export interface WotTankApiData {
 export interface Tank extends Entity {
   apiId: string | undefined;
   type: ApiTankType;
+  default: boolean;
 }
 
 export enum ApiTankType {

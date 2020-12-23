@@ -42,7 +42,7 @@ export default class TheApp extends Vue {
   localToken = localStorage.getItem(JWT_KEY)
 
   async created () {
-    this.setGame(Game.WOWS)
+    this.setGame(Game.WOT)
     this.setLocale(Locale.EN)
     this.initAuthentication()
   }

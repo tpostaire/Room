@@ -67,6 +67,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
     type: tank.type as ApiTankType,
     game: Game.WOT,
     image: require('@/assets/games/wot/images/' + tank.type + '_image.png'),
+    default: false,
     canvasImage: {
       image: tank.images.small_icon,
       dimensions: {
@@ -85,6 +86,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
       type: ApiTankType.LIGHT_TANK,
       game: Game.WOT,
       image: require('@/assets/games/wot/images/lightTank_image.png'),
+      default: true,
       canvasImage: {
         image: canvasIcons.lightTank.image,
         dimensions: {
@@ -101,6 +103,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
       type: ApiTankType.MEDIUM_TANK,
       game: Game.WOT,
       image: require('@/assets/games/wot/images/mediumTank_image.png'),
+      default: true,
       canvasImage: {
         image: canvasIcons.mediumTank.image,
         dimensions: {
@@ -117,6 +120,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
       type: ApiTankType.HEAVY_TANK,
       game: Game.WOT,
       image: require('@/assets/games/wot/images/heavyTank_image.png'),
+      default: true,
       canvasImage: {
         image: canvasIcons.heavyTank.image,
         dimensions: {
@@ -133,6 +137,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
       type: ApiTankType.TANK_DESTROYER,
       game: Game.WOT,
       image: require('@/assets/games/wot/images/AT-SPG_image.png'),
+      default: true,
       canvasImage: {
         image: canvasIcons.tankDestroyer.image,
         dimensions: {
@@ -149,6 +154,7 @@ export const getWotApiData = async (token: string, setGameApi: (api: Api) => voi
       type: ApiTankType.SPG,
       game: Game.WOT,
       image: require('@/assets/games/wot/images/SPG_image.png'),
+      default: true,
       canvasImage: {
         image: canvasIcons.spg.image,
         dimensions: {
